@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+    <html lang="id" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Studi Kasus: Jakarta Air Quality & Mobility Analysis | Adnin Danil Azkia</title>
+        <!-- Google Fonts & Tailwind CSS CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <style>
+            body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        </style>
+    </head>
+    <body class="bg-slate-50 text-slate-800 antialiased selection:bg-rose-500 selection:text-white">
+
+        <!-- 🌐 NAVBAR -->
+        <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+            <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+                <a href="index.html" class="inline-flex items-center gap-2 text-sm font-bold text-slate-700 hover:text-rose-600 transition">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                    Kembali ke Beranda
+                </a>
+                <div class="flex items-center gap-3">
+                    <a href="https://github.com/Adnin03/jakarta-air-quality-mobility-analysis" target="_blank" class="inline-flex items-center gap-2
+                    bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4 py-2 rounded-lg transition">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+                            0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23
+                            1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0
+                            1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0
+                            4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024
+                            12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                        Lihat di GitHub
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- 📰 HEADER STUDI KASUS -->
+        <article class="max-w-5xl mx-auto px-6 pt-12 pb-24">
+
+            <header class="mb-12">
+                <div class="flex flex-wrap items-center gap-2 mb-4">
+                    <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-200">Studi
+                    Kasus Lingkungan & Smart City</span>
+                    <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-slate-100 text-slate-700">Tahun 2024</span>
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                    Jakarta Urban Air Quality & Mobility Analysis (2024)
+                </h1>
+
+                <p class="text-lg sm:text-xl text-slate-600 leading-relaxed mb-8">
+                    Sebuah studi kasus analitik komprehensif yang membedah <b>8.784 titik data historis per jam</b> untuk menguji korelasi antara
+                    dinamika polutan atmosfer (PM2.5, PM10, AQI), anomali cuaca ekstrem, dan pola aktivitas warga di DKI Jakarta.
+                </p>
+
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5 rounded-2xl bg-white border border-slate-200 text-xs">
+                    <div>
+                        <span class="text-slate-400 block font-medium mb-1">Peran Analis</span>
+                        <span class="font-bold text-slate-800">Adnin Danil Azkia</span>
+                    </div>
+                    <div>
+                        <span class="text-slate-400 block font-medium mb-1">Alat & Teknologi</span>
+                        <span class="font-bold text-slate-800">Python, Power BI, DAX, SQL</span>
+                    </div>
+                    <div>
+                        <span class="text-slate-400 block font-medium mb-1">Sumber Data</span>
+                        <span class="font-bold text-slate-800">Open-Meteo REST API</span>
+                    </div>
+                    <div>
+                        <span class="text-slate-400 block font-medium mb-1">Cakupan Data</span>
+                        <span class="font-bold text-slate-800">8.784 Jam (1 Tahun Penuh)</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- 📌 RINGKASAN EKSEKUTIF (KEY FINDINGS) -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-rose-100 text-rose-600 flex items-center justify-center text-sm font-bold">1</span>
+                    Ringkasan Eksekutif & Temuan Kunci
+                </h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-6 rounded-2xl bg-white border border-slate-200">
+                        <div class="text-rose-600 font-extrabold text-2xl mb-1">0 Hari (0%)</div>
+                        <div class="font-bold text-slate-900 text-sm mb-2">Nol Hari Udara "Baik" di 2024</div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Dari 366 hari pengamatan, tidak ada satu hari pun di Jakarta yang masuk kategori "Baik" menurut standar US EPA. Sebanyak
+                            76,7% hari berada dalam kategori "Tidak Sehat" hingga "Sangat Berbahaya".
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-white border border-slate-200">
+                        <div class="text-amber-600 font-extrabold text-2xl mb-1">23.00 WIB</div>
+                        <div class="font-bold text-slate-900 text-sm mb-2">Puncak Polusi Terjadi Tengah Malam</div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Berlawanan dengan asumsi umum bahwa jam berangkat kerja adalah waktu paling berpolusi, PM2.5 justru memuncak pada jam 23.00
+                            malam (85,7 µg/m³) akibat fenomena inversi suhu dan masuknya truk logistik berat.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-white border border-slate-200">
+                        <div class="text-indigo-600 font-extrabold text-2xl mb-1">64,4 vs 64,8 µg/m³</div>
+                        <div class="font-bold text-slate-900 text-sm mb-2">Mitos Hari Libur (Weekend Myth)</div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Udara hari Minggu terbukti sama buruknya dengan hari Senin. Libur perkantoran tidak mereduksi emisi karena tingginya
+                            mobilitas rekreasi dan operasional industri penyangga Jabodetabek di akhir pekan.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-white border border-slate-200">
+                        <div class="text-blue-600 font-extrabold text-2xl mb-1">Turun ~24%</div>
+                        <div class="font-bold text-slate-900 text-sm mb-2">Hujan Meredam, Bukan Menghilangkan</div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Curah hujan lebat mereduksi partikel debu dari 66,9 menjadi 50,9 µg/m³. Namun, angka ini tetap 3,3 kali lipat di atas batas
+                            aman WHO (15 µg/m³). Hujan bukanlah solusi jangka panjang.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 🖥️ SHOWCASE DASHBOARD INTERAKTIF -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-rose-100 text-rose-600 flex items-center justify-center text-sm font-bold">2</span>
+                    Executive Dashboard Interaktif (Power BI)
+                </h2>
+
+                <div class="bg-white p-4 sm:p-6 rounded-3xl border border-slate-200 shadow-sm mb-6">
+                    <img src="assets/dashboard-overview.png" alt="Power BI Executive Dashboard" class="rounded-2xl border border-slate-200 w-full
+                    object-contain mb-6">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-600 pt-4 border-t border-slate-100">
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-2">Fitur Utama Dashboard:</h4>
+                            <ul class="space-y-1.5 text-xs text-slate-600 list-disc list-inside">
+                                <li><b>Global Slicer Banner</b>: Filter dinamis Bulan, Hari Kerja/Weekend, dan Musim.</li>
+                                <li><b>Benchmark Standar WHO</b>: Garis referensi batas aman 15 µg/m³ tanpa distorsi sumbu Y.</li>
+                                <li><b>Harmonisasi Warna Semantik</b>: Merah untuk bahaya polusi, biru untuk presipitasi hujan.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-2">DAX Measures Khusus:</h4>
+                            <ul class="space-y-1.5 text-xs text-slate-600 list-disc list-inside">
+                                <li><code>Avg PM2.5</code> & <code>Max AQI</code> untuk deteksi ekstrem.</li>
+                                <li><code>% Jam Melebihi WHO</code> (menemukan 96.8% jam melebihi batas aman).</li>
+                                <li>Format angka dinamis <code>Total Curah Hujan</code> dengan satuan kustom.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="https://github.com/Adnin03/jakarta-air-quality-mobility-analysis" target="_blank" class="inline-flex items-center gap-2
+                    bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-5 py-3 rounded-xl transition">
+                        <i data-lucide="download" class="w-4 h-4"></i>
+                        Unduh File .pbix di Repositori GitHub
+                    </a>
+                </div>
+            </section>
+
+            <!-- 🔍 DEEP DIVE ANALISIS & GRAFIK STATISTIK (PYTHON) -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-rose-100 text-rose-600 flex items-center justify-center text-sm font-bold">3</span>
+                    Eksplorasi Data & Bukti Statistik (Python)
+                </h2>
+
+                <div class="space-y-12">
+                    <!-- Insight 1 -->
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">1. Mengapa Pukul 23.00 Malam Menjadi Titik Terburuk?</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Data membuktikan konsentrasi polutan terendah terjadi di siang hari (11.00–14.00 WIB) saat panas matahari menggerakkan
+                            sirkulasi udara vertikal. Begitu malam tiba, lapisan udara dingin mengunci asap di dekat tanah (inversi suhu), diperparah
+                            oleh dibukanya akses tol dalam kota bagi truk diesel muatan berat setelah jam 21.00 WIB.
+                        </p>
+                        <img src="assets/01_hourly_pm25.png" alt="Grafik Pola Jam Polusi" class="rounded-xl border border-slate-200 max-h-[380px] mx-auto
+                        object-contain">
+                    </div>
+
+                    <!-- Insight 2 -->
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">2. Mitos Hari Libur: Udara Minggu Sama Buruknya dengan Senin</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Banyak pihak menduga hari kerja menghasilkan polusi lebih tinggi karena jam kantor. Faktanya, rata-rata PM2.5 hari Minggu
+                            mencapai 64,4 µg/m³, hampir sama dengan hari Senin (64,8 µg/m³). Hal ini membuktikan bahwa emisi rekreasi warga Jakarta dan
+                            pabrik di kawasan industri penyangga tetap beroperasi masif di hari libur.
+                        </p>
+                        <img src="assets/02_weekend_myth.png" alt="Grafik Mitos Hari Libur" class="rounded-xl border border-slate-200 max-h-[380px]
+                        mx-auto object-contain">
+                    </div>
+
+                    <!-- Insight 3 -->
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">3. Rain Washing Effect: Seberapa Efektif Hujan Membersihkan Udara?</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Hujan sedang hingga lebat terbukti mereduksi partikel debu sebesar 23,9% (dari 66,9 menjadi 50,9 µg/m³). Namun, bahkan
+                            setelah dibilas hujan lebat, konsentrasi PM2.5 masih lebih dari 3 kali lipat di atas batas aman tahunan WHO. Hujan hanya
+                            meredam sementara, bukan solusi permanen.
+                        </p>
+                        <img src="assets/03_rain_washing_effect.png" alt="Grafik Efek Hujan" class="rounded-xl border border-slate-200 max-h-[380px]
+                        mx-auto object-contain">
+                    </div>
+
+                    <!-- Insight 4 -->
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">4. Tren Musiman: Krisis Polusi di Bulan Mei & November</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Terdapat korelasi terbalik yang kuat antara curah hujan dan polusi. Bulan paling bersih terjadi di musim hujan lebat (Januari
+                            & Desember dengan curah hujan >330 mm). Sebaliknya, bulan Mei (82,5 µg/m³) dan November (79,3 µg/m³) menjadi masa paling
+                            kritis bagi saluran pernapasan warga.
+                        </p>
+                        <img src="assets/04_seasonal_trend.png" alt="Grafik Tren Musiman" class="rounded-xl border border-slate-200 max-h-[380px] mx-auto
+                        object-contain">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 💡 REKOMENDASI STRATEGIS UNTUK STAKEHOLDER -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-rose-100 text-rose-600 flex items-center justify-center text-sm font-bold">4</span>
+                    Rekomendasi Strategis Berbasis Data
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 rounded-2xl bg-white border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-base mb-3 flex items-center gap-2">
+                            <i data-lucide="truck" class="w-5 h-5 text-rose-600"></i>
+                            Untuk Dinas Perhubungan DKI Jakarta
+                        </h4>
+                        <ul class="space-y-3 text-xs text-slate-600 leading-relaxed">
+                            <li><b>Uji Emisi Ketat Angkutan Berat Malam Hari</b>: Fokuskan pos razia uji emisi di gerbang tol masuk kota Jakarta setelah
+                            pukul 21.00 WIB untuk menekan lonjakan PM2.5 di tengah malam.</li>
+                            <li><b>Perluasan Pembatasan ke Akhir Pekan</b>: Pertimbangkan regulasi ramah lingkungan di koridor wisata utama di akhir
+                            pekan karena emisi hari Minggu terbukti sama tingginya dengan hari kerja.</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-white border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-base mb-3 flex items-center gap-2">
+                            <i data-lucide="heart-pulse" class="w-5 h-5 text-emerald-600"></i>
+                            Untuk Dinas Kesehatan & Publik
+                        </h4>
+                        <ul class="space-y-3 text-xs text-slate-600 leading-relaxed">
+                            <li><b>Edukasi Tren Olahraga Malam (*Night Run*)</b>: Imbau masyarakat agar tidak melakukan aktivitas kardio intensif di luar
+                            ruangan setelah jam 20.00 WIB karena udara sedang berada di titik paling beracun.</li>
+                            <li><b>Peringatan Dini Musiman</b>: Siapkan kampanye proteksi masker medis dan anjuran kerja jarak jauh (WFH) saat memasuki
+                            periode transisi kemarau (Mei s.d. Oktober).</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER NAV -->
+            <footer class="pt-10 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <a href="index.html" class="inline-flex items-center gap-2 text-sm font-bold text-rose-600 hover:text-rose-700 transition">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                    Kembali ke Katalog Proyek
+                </a>
+                <p class="text-xs text-slate-400">
+                    Studi Kasus oleh Adnin Danil Azkia • Data Analyst Portfolio
+                </p>
+            </footer>
+
+        </article>
+
+        <script>
+            lucide.createIcons();
+        </script>
+    </body>
+    </html>

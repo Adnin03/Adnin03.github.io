@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+    <html lang="id" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adnin Danil Azkia | Data Analyst Portfolio</title>
+        <!-- Google Fonts & Tailwind CSS CDN (Ringan, Tanpa Perlu Install Node.js) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <style>
+            body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        </style>
+    </head>
+    <body class="bg-slate-50 text-slate-800 antialiased selection:bg-rose-500 selection:text-white">
+
+        <!-- 🌐 NAVBAR -->
+        <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+            <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+                <a href="#" class="text-xl font-extrabold tracking-tight text-slate-900 flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-lg bg-rose-600 text-white flex items-center justify-center font-bold text-sm">A</span>
+                    Adnin Danil Azkia
+                </a>
+                <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                    <a href="#about" class="hover:text-rose-600 transition">Tentang</a>
+                    <a href="#skills" class="hover:text-rose-600 transition">Keahlian</a>
+                    <a href="#projects" class="hover:text-rose-600 transition">Portofolio</a>
+                    <a href="#contact" class="hover:text-rose-600 transition">Kontak</a>
+                </nav>
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4
+                py-2.5 rounded-lg transition shadow-sm">
+                    Hubungi Saya
+                </a>
+            </div>
+        </header>
+
+        <!-- 🚀 HERO SECTION -->
+        <section class="max-w-6xl mx-auto px-6 pt-20 pb-16 md:pt-28 md:pb-24">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                    Mengubah Data Rumit Menjadi <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-indigo-600">Keputusan Bisnis
+                    Nyata.</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-600 leading-relaxed mb-8">
+                    Halo, saya <b>Adnin Danil Azkia</b>. Seorang Data Analyst yang berfokus pada analisis data eksploratif (EDA), pembersihan data dengan
+                    Python/SQL, dan perancangan dashboard interaktif eksekutif menggunakan Power BI.
+                </p>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#projects" class="inline-flex items-center gap-2 bg-rose-600 hover:bg-rose-700 text-white font-bold px-6 py-3.5 rounded-xl
+                    transition shadow-lg shadow-rose-600/20">
+                        Lihat Proyek Portofolio
+                        <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-slate-800
+                    font-bold px-6 py-3.5 rounded-xl border border-slate-200 transition">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11
+                            19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5
+                            12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🛠️ SKILLS SECTION -->
+        <section id="skills" class="bg-white py-16 border-y border-slate-200">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-widest uppercase text-rose-600 mb-2">Core Tech Stack</h2>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-10">Alat & Teknologi yang Saya Gunakan</h3>
+
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-rose-300 transition">
+                        <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-4">
+                            <i data-lucide="code-2" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-1">Python & SQL</h4>
+                        <p class="text-xs text-slate-500">Pandas, NumPy, Requests, Data Cleaning, Querying Relational DB</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-rose-300 transition">
+                        <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold mb-4">
+                            <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-1">Power BI & DAX</h4>
+                        <p class="text-xs text-slate-500">Executive Dashboarding, Data Modeling, Custom DAX Measures</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-rose-300 transition">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold mb-4">
+                            <i data-lucide="table" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-1">Excel Spreadsheet</h4>
+                        <p class="text-xs text-slate-500">Pivot Tables, Advanced Formulas, Business Calculation</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-rose-300 transition">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold mb-4">
+                            <i data-lucide="git-branch" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-1">Git & REST APIs</h4>
+                        <p class="text-xs text-slate-500">API Data Ingestion, Version Control, Collaborative Workflows</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 📂 PROJECTS SHOWCASE -->
+        <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <h2 class="text-xs font-bold tracking-widest uppercase text-rose-600 mb-2">Featured Projects</h2>
+                    <h3 class="text-3xl font-extrabold text-slate-900">Studi Kasus Analisis Data</h3>
+                </div>
+                <p class="text-sm text-slate-500 mt-2 md:mt-0">Setiap proyek berorientasi pada pemecahan masalah bisnis nyata.</p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-12">
+
+                <!-- PROYEK 1: JAKARTA AIR QUALITY (Bintang Utama) -->
+                <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col
+                lg:flex-row">
+                    <div class="lg:w-7/12 bg-slate-100 p-6 flex items-center justify-center border-b lg:border-b-0 lg:border-r border-slate-200">
+                        <img src="assets/dashboard-overview.png" alt="Jakarta Air Quality Dashboard" class="rounded-xl shadow-md border border-slate-200
+                        max-h-[420px] object-contain hover:scale-[1.02] transition duration-300">
+                    </div>
+                    <div class="lg:w-5/12 p-8 sm:p-10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border
+                                border-emerald-200">Completed Case Study</span>
+                                <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-slate-100 text-slate-700">Smart
+                                City</span>
+                            </div>
+                            <h4 class="text-2xl font-extrabold text-slate-900 mb-4 leading-snug">
+                                Jakarta Urban Air Quality & Mobility Analysis (2024)
+                            </h4>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                Menganalisis <b>8.784 titik data historis per jam</b> untuk membedah krisis polusi udara Jakarta (PM2.5). Mematahkan
+                                mitos bahwa hari Minggu udaranya bersih (polusi Minggu 64,4 µg/m³ sama buruknya dengan Senin 64,8 µg/m³), serta
+                                membuktikan puncak bahaya polusi terjadi pada jam 23.00 malam.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="text-xs px-2.5 py-1 bg-slate-100 font-semibold text-slate-700 rounded-md">Python</span>
+                                <span class="text-xs px-2.5 py-1 bg-slate-100 font-semibold text-slate-700 rounded-md">Power BI</span>
+                                <span class="text-xs px-2.5 py-1 bg-slate-100 font-semibold text-slate-700 rounded-md">DAX</span>
+                                <span class="text-xs px-2.5 py-1 bg-slate-100 font-semibold text-slate-700 rounded-md">Open-Meteo API</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-slate-100">
+                            <a href="project-jakarta-air.html" class="inline-flex items-center gap-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold px-5 py-3
+                            rounded-xl transition shadow-md shadow-rose-600/20">
+                                Baca Studi Kasus Lengkap
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                            <a href="https://github.com/Adnin03/jakarta-air-quality-mobility-analysis" target="_blank" class="inline-flex items-center gap-2 bg-slate-100
+                            hover:bg-slate-200 text-slate-800 text-xs font-bold px-4 py-3 rounded-xl transition">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYEK 2: PLACEHOLDER (Segera Hadir) -->
+                <div class="bg-slate-50/60 rounded-3xl border border-dashed border-slate-300 p-8 sm:p-12 flex flex-col md:flex-row items-center
+                justify-between gap-6">
+                    <div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-50 text-amber-700 border
+                        border-amber-200 mb-3 inline-block">Upcoming Project</span>
+                        <h4 class="text-xl font-bold text-slate-800 mb-2">E-Commerce Customer Behavior & RFM Segmentation</h4>
+                        <p class="text-sm text-slate-500 max-w-xl">
+                            Menganalisis pola retensi pelanggan bulanan (*Cohort Analysis*) dan segmentasi RFM untuk mengoptimalkan strategi kampanye
+                            retensi pembeli.
+                        </p>
+                    </div>
+                    <div class="text-xs font-semibold text-slate-400 bg-white border border-slate-200 px-4 py-2 rounded-xl whitespace-nowrap">
+                        Sedang Dikerjakan ⏳
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 📬 CONTACT SECTION -->
+        <section id="contact" class="bg-slate-900 text-white py-20">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-xs font-bold tracking-widest uppercase text-rose-400 mb-3">Let's Connect</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold mb-6 tracking-tight">Tertarik Berkolaborasi atau Merekrut?</h3>
+                <p class="text-slate-400 max-w-xl mx-auto text-sm sm:text-base mb-10 leading-relaxed">
+                    Saya selalu terbuka untuk diskusi seputar data analytics, peluang kerja penuh waktu (*full-time*), maupun proyek lepas (*freelance*).
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <a href="https://linkedin.com" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white
+                    font-bold text-sm px-6 py-3.5 rounded-xl transition">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11
+                            19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5
+                            12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/Adnin03" target="_blank" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white
+                    font-bold text-sm px-6 py-3.5 rounded-xl border border-slate-700 transition">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+                            0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23
+                            1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0
+                            1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0
+                            4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024
+                            12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="mailto:adnin.analytics@gmail.com" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-bold
+                    text-sm px-6 py-3.5 rounded-xl border border-slate-700 transition">
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                        Email Saya
+                    </a>
+                </div>
+
+                <p class="text-xs text-slate-500 border-t border-slate-800 pt-8">
+                    © 2026 Adnin Danil Azkia. Built with HTML, Tailwind CSS & Hosted on GitHub Pages.
+                </p>
+            </div>
+        </section>
+
+        <!-- Inisialisasi Ikon Lucide -->
+        <script>
+            lucide.createIcons();
+        </script>
+    </body>
+    </html>
