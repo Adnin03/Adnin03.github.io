@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus: Steam Gaming Market Intelligence | Adnin Danil Azkia</title>
+    <!-- Google Fonts & Tailwind CSS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-teal-600 selection:text-white">
+
+    <!-- 🌐 NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="inline-flex items-center gap-2 text-sm font-bold text-slate-700 hover:text-teal-700 transition">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                Kembali ke Beranda
+            </a>
+            <div class="flex items-center gap-3">
+                <a href="https://github.com/Adnin03/steam-market-intelligence" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4 py-2 rounded-lg transition">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    Lihat di GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 📰 HEADER STUDI KASUS -->
+    <article class="max-w-5xl mx-auto px-6 pt-12 pb-24">
+
+        <header class="mb-12">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-teal-50 text-teal-800 border border-teal-200">Gaming Market Intelligence</span>
+                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-slate-100 text-slate-700">Top 1.000 Steam Catalog</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                Steam Market Intelligence: Penetapan Harga, Loyalitas Pemain & Dinamika Publisher
+            </h1>
+
+            <p class="text-lg sm:text-xl text-slate-600 leading-relaxed mb-8">
+                Studi kasus analitik pasar video game global yang membedah <b>106,6 Juta ulasan gamer</b> dan <b>4,7 Juta pemain simultan (CCU)</b> pada 1.000 game terpopuler di Steam untuk menemukan formula penetapan harga optimal, paradoks model Free-to-Play, serta strategi retensi studio independen.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5 rounded-2xl bg-white border border-slate-200 text-xs">
+                <div>
+                    <span class="text-slate-400 block font-medium mb-1">Peran Analis</span>
+                    <span class="font-bold text-slate-800">Adnin Danil Azkia</span>
+                </div>
+                <div>
+                    <span class="text-slate-400 block font-medium mb-1">Alat & Teknologi</span>
+                    <span class="font-bold text-slate-800">Python, Power BI, DAX, Pandas</span>
+                </div>
+                <div>
+                    <span class="text-slate-400 block font-medium mb-1">Sumber Data</span>
+                    <span class="font-bold text-slate-800">SteamSpy REST API</span>
+                </div>
+                <div>
+                    <span class="text-slate-400 block font-medium mb-1">Skala Analisis</span>
+                    <span class="font-bold text-slate-800">106.6M Reviews • 4.7M CCU</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- 📌 RINGKASAN EKSEKUTIF (KEY FINDINGS) -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-teal-100 text-teal-800 flex items-center justify-center text-sm font-bold">1</span>
+                Ringkasan Eksekutif & Temuan Kunci
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-6 rounded-2xl bg-white border border-slate-200">
+                    <div class="text-teal-700 font-extrabold text-2xl mb-1">$10 – $19.99 (88.8%)</div>
+                    <div class="font-bold text-slate-900 text-sm mb-2">The Indie Sweet-Spot</div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Rentang harga $10.00 hingga $19.99 menghasilkan rata-rata kepuasan gamer tertinggi (88,8% ulasan positif). Gamer menganggap tier harga ini memberikan rasio nilai-terhadap-kualitas (value-for-money) paling optimal tanpa ekspektasi grafis berlebihan.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white border border-slate-200">
+                    <div class="text-amber-600 font-extrabold text-2xl mb-1">2.5x CCU vs 77.2%</div>
+                    <div class="font-bold text-slate-900 text-sm mb-2">Paradoks Free-to-Play</div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Game Free-to-Play merebut 44% total pemain aktif (rata-rata 8.840 CCU per judul) meski hanya berjumlah 23,6% katalog. Namun, rating kepuasannya anjlok hampir 10% dibanding game berbayar (77,2% vs 87,0%) akibat friksi mikrotransaksi, cheater, dan review bombing.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white border border-slate-200">
+                    <div class="text-rose-600 font-extrabold text-2xl mb-1">82.9% (-5.9%)</div>
+                    <div class="font-bold text-slate-900 text-sm mb-2">Pinalti Ekspektasi Game AAA ($40+)</div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Game mahal di atas $40 mengalami penurunan tingkat kepuasan signifikan (82,9%). Ketika gamer membayar harga penuh, toleransi mereka terhadap bug, optimasi performa yang buruk, atau sistem live-service sangat minim.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white border border-slate-200">
+                    <div class="text-slate-900 font-extrabold text-2xl mb-1">1.12M CCU (24%)</div>
+                    <div class="font-bold text-slate-900 text-sm mb-2">Outlier Monopoli Ekosistem Valve</div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Valve Corporation menjadi publisher outlier absolut dengan lebih dari 1,12 Juta pemain serentak—lebih dari 3,5x lipat melampaui publisher terbesar kedua (KRAFTON ~315K via PUBG) dan EA (~256K via Apex Legends), didorong ekosistem CS:GO dan Dota 2.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 📊 DASHBOARD POWER BI OVERVIEW -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-teal-100 text-teal-800 flex items-center justify-center text-sm font-bold">2</span>
+                Dashboard Interaktif Power BI
+            </h2>
+
+            <div class="bg-white p-4 sm:p-6 rounded-3xl border border-slate-200 shadow-sm mb-6">
+                <img src="assets/steam_dashboard_overview.png" alt="Steam Market Intelligence Power BI Dashboard" class="w-full rounded-2xl border border-slate-100 shadow-inner">
+            </div>
+
+            <div class="p-6 rounded-2xl bg-teal-900 text-white">
+                <h3 class="text-base font-bold text-teal-200 mb-2">Fitur & Arsitektur Desain Dashboard:</h3>
+                <ul class="text-xs sm:text-sm text-teal-100 space-y-2 leading-relaxed">
+                    <li>• <b>Preattentive Color Highlighting:</b> Penyorotan batang warna aksen emas (<code class="bg-teal-950 px-1 py-0.5 rounded text-amber-300">#E9C46A</code>) pada sweet-spot $10–$19.99 agar audiens langsung menangkap insight dalam 0,2 detik.</li>
+                    <li>• <b>Konsistensi Semantik:</b> Warna Free to Play (<code class="bg-teal-950 px-1 py-0.5 rounded text-teal-300">#2A9D8F</code>) dan Paid (<code class="bg-teal-950 px-1 py-0.5 rounded text-teal-100">#0D3B3A</code>) terkunci konsisten di seluruh visual.</li>
+                    <li>• <b>Tata Letak 4-Geometri:</b> Memadukan kolom vertikal (kategori harga), batang mendatar (10 publisher), tabel metrik dengan conditional formatting, dan scatter plot statistik (korelasi harga vs kepuasan).</li>
+                    <li>• <b>Tombol Reset Bookmark:</b> Navigasi sidebar interaktif yang mampu mereset seluruh slicer dan cross-filtering grafik sekaligus dalam 1 klik.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 📈 DETAIL ANALISIS & GRAFIK -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-teal-100 text-teal-800 flex items-center justify-center text-sm font-bold">3</span>
+                Eksplorasi Data & Bukti Analitik
+            </h2>
+
+            <!-- Analisis 1: Sweet-Spot Harga -->
+            <div class="mb-10 p-6 rounded-2xl bg-white border border-slate-200">
+                <h3 class="text-lg font-bold text-slate-900 mb-3">A. Dinamika Penetapan Harga: Kurva Kepuasan Pemain</h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                    Data membuktikan bahwa hubungan antara harga game dan kepuasan pemain berbentuk kurva lonceng terbalik (inverted curve). Kepuasan meningkat dari Free-to-Play (77,2%) menuju puncaknya di Mid Indie $10–$19.99 (88,8%), lalu mengalami penurunan bertahap saat menyentuh ranah game komersial mahal $40+ (82,9%).
+                </p>
+                <img src="assets/01_pricing_tier_vs_satisfaction.png" alt="Pricing Tier vs Satisfaction" class="w-full max-w-2xl mx-auto rounded-xl border border-slate-200">
+            </div>
+
+            <!-- Analisis 2: Free to Play vs Paid -->
+            <div class="mb-10 p-6 rounded-2xl bg-white border border-slate-200">
+                <h3 class="text-lg font-bold text-slate-900 mb-3">B. Paradoks Skala: Pemain Masif vs Sentimen Ulasan</h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                    Meskipun model bisnis Free-to-Play mampu mengakuisisi pemain hingga 2,5x lipat lebih tinggi dari game berbayar, biaya emosional yang dibayar adalah volatilitas ulasan. Game berbayar mempertahankan basis penggemar yang jauh lebih setia dan suportif.
+                </p>
+                <img src="assets/02_f2p_vs_paid.png" alt="Free to Play vs Paid Dynamics" class="w-full max-w-2xl mx-auto rounded-xl border border-slate-200">
+            </div>
+
+            <!-- Analisis 3: Top Publishers -->
+            <div class="p-6 rounded-2xl bg-white border border-slate-200">
+                <h3 class="text-lg font-bold text-slate-900 mb-3">C. Peta Konsentrasi Publisher: Dominasi Outlier Valve</h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                    Peringkat 10 publisher terbesar berdasarkan pemain aktif membuktikan dominasi mutlak Valve. Namun di luar publisher raksasa, studio indie dan AA (seperti Pocketpair dengan Palworld dan Larian Studios dengan Baldur's Gate 3) terbukti mampu menembus jajaran elit global melalui eksekusi produk yang presisi.
+                </p>
+                <img src="assets/03_top_publishers.png" alt="Top 10 Publishers on Steam" class="w-full max-w-2xl mx-auto rounded-xl border border-slate-200">
+            </div>
+        </section>
+
+        <!-- 💡 REKOMENDASI STRATEGIS BISNIS -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-teal-100 text-teal-800 flex items-center justify-center text-sm font-bold">4</span>
+                Rekomendasi Strategis untuk Pengembang Game
+            </h2>
+
+            <div class="space-y-4">
+                <div class="p-5 rounded-2xl bg-white border border-slate-200">
+                    <span class="text-xs font-bold uppercase tracking-wider text-teal-700 block mb-1">Untuk Pengembang Game Indie</span>
+                    <h3 class="font-extrabold text-slate-900 text-base mb-2">Tentukan Harga di Koridor $14.99 – $19.99</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Hindari jebakan menetapkan harga terlalu murah (&lt;$5) karena harga murah sering kali dipersepsikan sebagai game berkualitas rendah. Koridor $15–$20 memberikan ruang margin profit yang sehat sekaligus peluang tertinggi mencapai predikat "Overwhelmingly Positive".
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-white border border-slate-200">
+                    <span class="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-1">Untuk Studio Menengah (AA)</span>
+                    <h3 class="font-extrabold text-slate-900 text-base mb-2">Kelola Ekspektasi Performa Sebelum Menyentuh $30+</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Jika menetapkan harga di atas $30, prioritaskan uji coba QA dan stabilitas teknis pada hari peluncuran. Ulasan negatif di 72 jam pertama peluncuran akan menghancurkan algoritma rekomendasi Steam secara permanen.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-white border border-slate-200">
+                    <span class="text-xs font-bold uppercase tracking-wider text-rose-700 block mb-1">Untuk Penerbit Game Free-to-Play</span>
+                    <h3 class="font-extrabold text-slate-900 text-base mb-2">Lindungi Integritas Gameplay dari Monetisasi Agresif</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Pemisahan tegas antara monetisasi kosmetik dengan keadilan kompetitif adalah harga mati. Investasi pada sistem anti-cheat sama pentingnya dengan konten baru untuk mempertahankan ulasan positif di atas 70%.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🔗 REPOSITORI & ARTIFAK -->
+        <section class="border-t border-slate-200 pt-12 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+                <h3 class="text-lg font-extrabold text-slate-900 mb-1">Ingin Membedah Kode & File Dashboard?</h3>
+                <p class="text-xs text-slate-500">Tersedia file Jupyter Notebook, dataset bersih, dan file `.pbix` Power BI asli.</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="https://github.com/Adnin03/steam-market-intelligence" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs px-6 py-3.5 rounded-xl transition shadow-md">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    Buka Repositori GitHub
+                </a>
+            </div>
+        </section>
+
+    </article>
+
+    <!-- Inisialisasi Ikon Lucide -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
